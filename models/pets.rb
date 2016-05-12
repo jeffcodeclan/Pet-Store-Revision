@@ -40,9 +40,9 @@ class Pets
 
    def update()
        sql = "UPDATE pets 
-         SET name = #{@name}
-         address = #{@address}
-         store_id = #{@store_id}
+         SET name = '#{@name},'
+         address = '#{@address},'
+         store_id = '#{@store_id},'
          WHERE id = #{@id}"
        SqlRunner.run( sql )
    end
