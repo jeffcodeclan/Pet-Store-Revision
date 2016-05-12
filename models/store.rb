@@ -37,9 +37,9 @@ class Store
 
   def update()
     sql = "UPDATE store 
-      SET name = #{@name}
-      address = #{@address}
-      stock_type = #{@stock_type}
+      SET name = '#{@name},'
+      address = '#{@address},'
+      stock_type = '#{@stock_type}'
       WHERE id = #{@id}"
     SqlRunner.run( sql )
   end
